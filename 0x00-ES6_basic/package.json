@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "dev": "npx babel-node"
+    "dev": "npx babel-node",
+    "lint" : "eslint"
   },
   "keywords": [],
   "author": "",
