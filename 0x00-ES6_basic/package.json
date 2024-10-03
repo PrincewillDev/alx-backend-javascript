@@ -1,0 +1,22 @@
+{
+  "name": "0x00-es6_basic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "npx babel-node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.25.7",
+    "@babel/node": "^7.25.7",
+    "@babel/preset-env": "^7.25.7",
+    "@eslint/js": "^9.11.1",
+    "babel-jest": "^29.7.0",
+    "eslint": "^9.11.1",
+    "globals": "^15.10.0"
+  }
+}
