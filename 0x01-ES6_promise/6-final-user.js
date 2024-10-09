@@ -8,7 +8,9 @@ export default function handleProfileSignup(firstName, lastName, filename) {
   ]).then((results) => {
     results.forEach((results) => {
       if (results === 'fulfiled') {
-        console.log(`${results.value}`);
+        console.log(`${results.status}`);
+      } else {
+        console.log(`${results.reason}`);
       }
     });
   });
