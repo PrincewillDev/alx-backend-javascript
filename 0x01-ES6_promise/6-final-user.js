@@ -7,11 +7,10 @@ export default function handleProfileSignup(firstName, lastName, filename) {
     uploadPhoto(filename),
   ]).then((results) => {
     results.forEach((results) => {
-      if (results === 'fulfiled') {
-        console.log(`${results.status}`);
-      } else {
-        console.log(`${results.reason}`);
+      if (results.status === 'rejected') {
+        return { status: 'rejected', value: results.reason };
       }
+      return results;
     });
   });
 }
