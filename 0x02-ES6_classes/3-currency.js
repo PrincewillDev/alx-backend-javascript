@@ -5,11 +5,11 @@ export default class Currency {
    * @param {string} name - Name of the currency
    */
   constructor(code, name) {
-    if (typeof code !== "string") {
-      throw new TypeError("Code must be a string");
+    if (typeof code !== 'string') {
+      throw new TypeError('Code must be a string');
     }
-    if (typeof name !== "string") {
-      throw new TypeError("Name must be a string");
+    if (typeof name !== 'string') {
+      throw new TypeError('Name must be a string');
     }
 
     this._code = code;
@@ -21,8 +21,8 @@ export default class Currency {
   }
 
   set code(code) {
-    if (code !== "string") {
-      throw new TypeError("Code must be a string");
+    if (code !== 'string') {
+      throw new TypeError('Code must be a string');
     }
     this._code = code;
   }
@@ -32,8 +32,8 @@ export default class Currency {
   }
 
   set name(name) {
-    if (typeof name !== "string") {
-      throw new TypeError("Name must be a string");
+    if (typeof name !== 'string') {
+      throw new TypeError('Name must be a string');
     }
     this._name = name;
   }
