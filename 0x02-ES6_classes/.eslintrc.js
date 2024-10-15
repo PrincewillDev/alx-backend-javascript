@@ -23,7 +23,7 @@ module.exports = {
       'no-console': 'off',
       'no-shadow': 'off',
       'no-restricted-syntax': [
-        'TypeError',
+        'error',
         'LabeledStatement',
         'WithStatement',
       ],
