@@ -17,6 +17,7 @@ export default class Airport {
 
   // Overriding toString to return the airport code
   toString() {
-    return this._code;
+    const code = [`object ${this._code}`]
+    return code;
   }
 }
