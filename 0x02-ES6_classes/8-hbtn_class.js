@@ -1,11 +1,11 @@
 export default class HolbertonClass {
   constructor(size, location) {
-    if (typeof size !== "number") {
-      throw new TypeError("size must be a number");
+    if (typeof size !== 'number') {
+      throw new TypeError('size must be a number');
     }
 
-    if (typeof location !== "string") {
-      throw new TypeError("location must be a number");
+    if (typeof location !== 'string') {
+      throw new TypeError('location must be a number');
     }
 
     this._size = size;
@@ -25,9 +25,9 @@ export default class HolbertonClass {
     this._location = location;
   }
   [Symbol.toPrimitive](hint) {
-    if (hint === "number") {
+    if (hint === 'number') {
       return this._size;
-    } else if (hint === "string") {
+    } else if (hint === 'string') {
       return this._location;
     } else {
       return this._size;
