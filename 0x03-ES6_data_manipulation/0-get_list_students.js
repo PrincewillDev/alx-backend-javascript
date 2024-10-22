@@ -4,5 +4,6 @@ export default function getListStudents() {
     { id: 2, firstName: 'James', location: 'Columbia' },
     { id: 5, firstName: 'Serena', location: 'San Francis' },
   ];
+
   return stdArry;
 }
