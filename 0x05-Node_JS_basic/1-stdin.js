@@ -21,6 +21,7 @@ process.stdout.write(message);
 
 process.stdin.on('data', (input) => console.log(`Your name is: ${input}`));
 
-process.on('exit', () => {
+process.on('SIGINT', () => {
   process.stdout.write('This important software is now closing\n');
+  process.exit();
 });
